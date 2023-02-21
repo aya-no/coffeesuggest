@@ -1,0 +1,75 @@
+
+body {
+
+    background: linear-gradient(to top,#462e2e),
+      url("img/background.jpeg");  
+    background-size:  cover;        /* 背景のサイズ */
+    background-position: center;    /* 背景の位置指定 */
+    color: #ad722f;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+#favorite {
+    text-align: center;
+}
+
+.range{
+    accent-color: #ad722f;
+}
+
+.timing{
+    display:flex;
+    justify-content:center;
+    align-items:left; 
+}
+
+.cup{
+    display:block;
+    cursor: pointer;
+}
+
+#suggestButtonArea{
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
+
+#suggestButton{
+        border-radius: 100px;
+        width: 200px;
+        padding: 15px;
+        box-sizing: border-box;
+        background: #ad722f;
+        color: #462e2e;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+}
+
+hr{
+	background-color: #FFF;
+	border-top: 3px dotted #9b592d;
+}
+
+.ranking td{
+    padding: 1px 10px;
+    
+}
+
+.url{
+    text-align: right;
+}
+img {
+    width: 150px;
+}
+
+#suggestArea{
+    display: none;
+}
