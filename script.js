@@ -14,7 +14,7 @@
     beansName: "モカ（エチオピア）",
     about: "フルーティで華やかな香りのするやや小粒の豆が特徴です。嫌みの全くない酸味と軽い苦みが絶妙です。",
     yen: "税込 1,512円/200g",
-    img: "img/beans.jpeg",
+    img: "beans.jpeg",
     url:`http://umapanera.com/?pid=50142269`,
     score: 0,
   };
@@ -29,7 +29,7 @@
     beansName: "トラジャ（アリオスト・カロシG-1）",
     about: "トラジャ王族の血を引くコーヒー。スパイシー、厚みのある酸味と丸みのボディ、長く続く余韻を楽しめます。",
     yen: "税込 1,728円/200g",
-    img: "img/beans.jpeg",
+    img: "beans.jpeg",
     url:`http://umapanera.com/?pid=50142269`,
     score: 0,
   };
@@ -44,8 +44,8 @@
     beansName: "キリマンジャロ（エーデルワイスAA）",
     about: "エーデルワイス農園特有の柔らかな酸味を中心に、甘みと苦み、芳醇な香りを存分に楽しめます。",
     yen: "税込 1,620円/200g",
-    img: "img/beans.jpeg",
-    url:`http://umapanera.com/?pid=50142269`,
+    img: "beans.jpeg",
+    url:`http://umapanera.com/?pid=50142400`,
     score: 0,
   };
   
@@ -59,8 +59,8 @@
     beansName: "縁（ブレンド）",
     about: "４種類のスペシャリティ豆を使用したプレミアムブレンド。深い旨味が特徴。",
     yen: "税込 1,793円/200g",
-    img: "img/beans.jpeg",
-    url:`http://umapanera.com/?pid=50142269`,
+    img: "beans.jpeg",
+    url:`http://umapanera.com/?pid=56598653`,
     score: 0,
   };
   
@@ -74,8 +74,8 @@
     beansName: "コロンビア・デカフェ",
     about: "カフェイン残留率を0.1%以下に抑えた画期的な製法なので、妊産婦・授乳中の方、カフェインで眠れなくなる方、健康志向の方にお勧めできます。",
     yen: "税込 1,836円/200g",
-    img: "img/beans.jpeg",
-    url:`http://umapanera.com/?pid=50142269`,
+    img: "beans.jpeg",
+    url:`http://umapanera.com/?pid=94391399`,
     score: 0,
   };
   
@@ -89,8 +89,8 @@
     beansName: "ブラジル・デカフェ",
     about: "カフェイン残留率を0.1%以下に抑えた画期的な製法なので、妊産婦・授乳中の方、カフェインで眠れなくなる方、健康志向の方にお勧めできます。",
     yen: "税込 1,836円/200g",
-    img: "img/beans.jpeg",
-    url:`http://umapanera.com/?pid=50142269`,
+    img: "beans.jpeg",
+    url:`http://umapanera.com/?pid=111054790`,
     score: 0,
   };
   
@@ -145,7 +145,7 @@ function suggestClick(){
     suggestBeans(coffeeBeansList);//１～３位のおすすめお豆関数実行
     no1BeansChart(coffeeBeansList)//１位のお豆のレーダーチャート作成関数実行
     console.log(coffeeBeansList);
-
+}
 
 // 豆ごとにスコア付け　////////////////////////////////////////////////////////////////
   
@@ -204,6 +204,7 @@ function suggestBeans(arrayOfObject) {
 
 
 // １位のお豆のレーダーチャート作成////////////////////////////////////////////////////
+
 function no1BeansChart(arrayOfObject){
 let ctx = $('#chart');
 let mychart = new Chart(ctx, {
@@ -230,7 +231,7 @@ let mychart = new Chart(ctx, {
             borderWidth: 1,
             // pointBackgroundColor: 'rgb(46,106,177)',
         },{
-            label: 'オススメ 1位 のお豆',
+            label: 'おすすめ 1位 のお豆',
             data: [
                 arrayOfObject[0].bitterness,
                 arrayOfObject[0].acidity,
@@ -238,7 +239,7 @@ let mychart = new Chart(ctx, {
                 arrayOfObject[0].richBody,
                 arrayOfObject[0].flavor
             ],
-            backgroundColor: '#ad722f',
+            backgroundColor: '#a2997f',
             borderColor: 'rgba(0, 0, 0, 0)',
             borderWidth: 1,
             // pointBackgroundColor: 'rgb(46,106,177)',
@@ -262,5 +263,4 @@ let mychart = new Chart(ctx, {
     }
 });
 
-}
 }

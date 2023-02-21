@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
-  
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    </head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="theme-color" content="#000000">
+   <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
 <body>
   
-  <h1>おすすめのお豆えらびます！</h1>
+  <div class="icatch">
+    <img src="background.jpeg">
+    <h1>Choose your favorite coffee</h1>
+  </div>
   
-  <!-- <form name="favoriteForm" > -->
-    
+   
   <h2>あたなのお好みは？</h2>
   
-  <div id="favorite">
     <div class="range">
       <label for="bitterness">苦味　</label>
       <input type="range" id="bitterness" min="1" max="5" step="0.2">
@@ -42,73 +42,59 @@
       <input type="range" id="flavor" min="1" max="5" step="0.2">
       <spen></spen>
     </div>
-  </div>
+ 
   
-  <h2>コーヒーを飲むタイミングは？</h2>
-
-<div class="timing">
-  <fieldset>
-    <legend>いつ飲みますか？</legend>
-    
-    <div>
+  <h2>コーヒーはいつ飲みますか？</h2>
+   
+    <div class="checkbox">
       <input type="checkbox" id="morning" name="scales" checked>
       <label for="morning">朝</label>
-    </div>
-    <div>
       <input type="checkbox" id="lunch" name="lunch">
       <label for="lunch">昼</label>
-    </div>
-    <div>
       <input type="checkbox" id="dinner" name="dinner">
       <label for="dinner">夕</label>
-    </div>
-    <div>
       <input type="checkbox" id="night" name="ntght">
       <label for="night">夜</label>
     </div>
-  </fieldset>
-  
-  <fieldset class="timing">
-    <legend>何杯飲みますか？</legend>
+
+    <h2>何杯のみますか？</h2>
     
-    <div>
-      <label class="cup">
+    <div class="radio">
+      <label>
         <input type="radio" name="num_of_inq" >1杯～3杯/日
       </label>
-    </div>
-    <div>
-      <label class="cup">
+      <label>
         <input type="radio" id ="fourCup" name="num_of_inq" >4杯以上/日
       </label>
     </div>
+  
     
-  </fieldset>
-</div>
 
-<div id="suggestButtonArea">
-  <a href="#suggestArea">
-    <button type="button" id="suggestButton" onclick="suggestClick()">オススメお豆を調べる</button>
-  </a>
+  <div id="suggestButtonArea">
 
-</div>
+    <a href="#suggestArea">
+      <button type="button" id="suggestButton" onclick="suggestClick()">オススメお豆を調べる</button>
+    </a>
+
+  </div>
   
 
- <div id="suggestArea">
+  <div id="suggestArea">
    
    <h2>おすすめお豆ご紹介！</h2>
    
    <div id="chartArea">
      <canvas id="chart" width="600" height="400"></canvas>
-    </div>
+   </div>
 
     <table class="ranking">
       <tr>
         <td>
-          <img src="img/No1.png">
+          <img src="No1.png">
         </td>
         <td class="url">
           <a id="urlNo1" target="_blank" href="">
-            + 詳細をみる（外部サイトへ
+            + 詳細をみる（外部サイトへ）
           </a>
         </td>
       </tr>
@@ -117,17 +103,14 @@
           <img id="imgNo1" src="">
         </td>
         <td>
-          <p id="nameNo1">お豆の名前</p>
+          <p class="beansname" id="nameNo1">お豆の名前</p>
           <p id="aboutNo1">こんなお豆だよ</p>
           <p id="priceNo1">お値段</p>
         </td>
       </tr>
-    </table>
-    <hr>
-    <table class="ranking">
       <tr>
         <td>
-          <img src="img/No2.png">
+          <img src="No2.png">
         </td>
         <td class="url">
           <a id="urlNo2" target="_blank" href="">
@@ -140,21 +123,18 @@
           <img id="imgNo2" src="">
         </td>
         <td>
-          <p id="nameNo2">お豆の名前</p>
+          <p class="beansname" id="nameNo2">お豆の名前</p>
           <p id="aboutNo2">こんなお豆だよ</p>
           <p id="priceNo2">お値段</p>
         </td>
       </tr>
-    </table>
-
-    <table class="ranking">
       <tr>
         <td>
-          <img src="img/No3.png">
+          <img src="No3.png">
         </td>
         <td class="url">
           <a id="urlNo3" target="_blank" href="">
-            + 詳細をみる（外部サイトへ
+            + 詳細をみる（外部サイトへ）
           </a>
         </td>
       </tr>
@@ -163,7 +143,7 @@
           <img id="imgNo3" src="">
         </td>
         <td>
-          <p id="nameNo3">お豆の名前</p>
+          <p class="beansname" id="nameNo3">お豆の名前</p>
           <p id="aboutNo3">こんなお豆だよ</p>
           <p id="priceNo3">お値段</p>
         </td>
@@ -171,13 +151,27 @@
     </table>
 
   
-</div>
+  </div>
 
-
+  <hr>
+  <div id="impression">
+    <h2>講師・事務局の皆さま、FND14同期の皆さま 大変お世話になりました！</h2>
+    <h3>レベルアップできたこと</h3>
+    <ul>
+      <li>いきなり答えを探すのではなく、道筋をたててプログラムを考えられるようになった。</li>
+      <li></li>
+      <li></li>
+    </ul>
+    <p></p>
+    <h3>これから頑張りたいこと</h3>
+    <ul>
+      <li>最終課題のリファクタリングをしながら高階関数を使いこなせるようになりたい！</li>
+      <li>身近な課題を解決できるプログラムをまずは作ってみたい。</li>
+  </div>
+  </ul>
 </body>
 
-<script type="text/javascript" src="modules/lodash.full.min.js"></script>
-<script type="text/javascript" src="modules/test-boilerplate.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="script.js"></script>
