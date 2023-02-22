@@ -5,11 +5,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <meta name="theme-color" content="#000000">
    <link rel="stylesheet" type="text/css" href="style.css" />
+   <title>おすすめコーヒー</title>
   </head>
 
 <body>
   
-  <div class="icatch">
+  <div class="icatch" id="icatch">
     <img src="background.jpeg">
     <h1>Choose your favorite coffee</h1>
   </div>
@@ -73,7 +74,7 @@
   <div id="suggestButtonArea">
 
     <a href="#suggestArea">
-      <button type="button" id="suggestButton" onclick="suggestClick()">オススメお豆を調べる</button>
+      <button type="button" id="suggestButton" onclick="suggestClick()">おすすめコーヒーを調べる</button>
     </a>
 
   </div>
@@ -81,7 +82,7 @@
 
   <div id="suggestArea">
    
-   <h2>おすすめお豆ご紹介！</h2>
+   <h2>おすすめコーヒーご紹介！</h2>
    
    <div id="chartArea">
      <canvas id="chart" width="600" height="400"></canvas>
@@ -150,25 +151,30 @@
       </tr>
     </table>
 
+    <a href="#icatch">
+      <p id="oneMore">one more</p>
+    </a>
   
   </div>
 
+
   <hr>
+  <a href="#impression">
+    <img src="heart.png" onclick="heartClick()">
+  </a>
   <div id="impression">
-    <h2>講師・事務局の皆さま、FND14同期の皆さま 大変お世話になりました！</h2>
+    <h2>講師・事務局の皆さま、FND14同期の皆さま 大変お世話になりました！！！！！！！</h2>
     <h3>レベルアップできたこと</h3>
-    <ul>
-      <li>いきなり答えを探すのではなく、道筋をたててプログラムを考えられるようになった。</li>
-      <li></li>
-      <li></li>
-    </ul>
-    <p></p>
+    <p>
+      いきなり答えを探すのではなく、道筋をたててプログラムを考えられるようになりました。<br>
+      MDNへの抵抗感も少なくなって、プログラミング ＝ 楽しい！ です。
+    </p>
     <h3>これから頑張りたいこと</h3>
-    <ul>
-      <li>最終課題のリファクタリングをしながら高階関数を使いこなせるようになりたい！</li>
-      <li>身近な課題を解決できるプログラムをまずは作ってみたい。</li>
+    <p>
+      この最終課題のリファクタリングをして高階関数を使いこなせるようになりたいと思います！  
+    
+    </p>
   </div>
-  </ul>
 </body>
 
 

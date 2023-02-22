@@ -34,6 +34,7 @@ h2{
 
 .range{
     accent-color: #a29971;
+    margin: 10px;
 }
 
 .radio{
@@ -57,7 +58,7 @@ h2{
         margin-top: 40px;
         box-sizing: border-box;
         background: #a29971;
-        color: #cfdedf;
+        color: #ffffff;
         text-decoration: none;
         text-align: center;
         cursor: pointer;
@@ -93,6 +94,15 @@ hr{
     font-size: 70%;
 }
 
+.url a {
+    color: #a29971;
+}
+
+#oneMore{
+    color: #a29971;
+    text-decoration: underline;
+}
+
 .ranking img {
     width: 150px;
 }
@@ -101,6 +111,9 @@ hr{
     display: none;
 }
 
+
 #impression{
-    text-align: left;
+    display: none;
+    padding-top: 50px;
+    margin-bottom: 100%;
 }
